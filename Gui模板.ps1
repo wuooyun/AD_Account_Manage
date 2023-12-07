@@ -4,7 +4,8 @@
 #version 0.1
 
 # Load required assemblies
-[void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
+#[void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") #旧版本方式
+Add-Type -AssemblyName System.Windows.Forms
 
 # Drawing form and controls
 $Form_HelloWorld = New-Object System.Windows.Forms.Form
